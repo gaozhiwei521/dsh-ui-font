@@ -1,0 +1,5 @@
+# dsh-ui-font bundle patch — registers the plugin into the loader so
+# dsh-client-modules discovers its client bundle (__DSH_BOOT__ entry).
+- insert:
+    - id: dsh-ui-font
+      name: dsh-ui-font
