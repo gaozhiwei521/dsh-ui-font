@@ -82,6 +82,11 @@ powershell -ExecutionPolicy Bypass -File E:\deepseekwork1\_工具脚本\sync-dsh
 - 字体枚举优先使用浏览器 Local Font Access API；若宿主拒绝权限则降级为内置常见字体名单探测，此时新安装的字体可能不出现，可直接手动输入字体名
 - 自定义字体栈已做防注入过滤（拒绝 `; { } ( ) < >`、限长 300）
 
+## 许可 / License
+
+- **English**: This project is licensed under the [MIT License](LICENSE) — free to use, modify and distribute, including commercial use, provided the copyright notice is retained.
+- **中文**: 本项目基于 [MIT 许可证](LICENSE) 开源——允许自由使用、修改、分发（含商用），需保留版权声明。
+
 ## 卸载
 
 ```powershell
