@@ -1,6 +1,8 @@
-# dsh-ui-font — DSH 字体插件
+# dsh-ui-font — DSH 字体插件 | DSH Font Plugin
 
-修改整个 DSH 界面文字显示效果的客户端插件（设置 → 字体 / Fonts）。
+> **English**: A client plugin that restyles the whole DSH UI — UI/code fonts, display scale, line-height, font smoothing, code ligatures, and a font browser with CJK glyph marking (Settings → Fonts).
+
+> **中文**: 修改整个 DSH 界面文字显示效果的客户端插件（设置 → 字体 / Fonts）。
 
 ## 功能
 
