@@ -28,7 +28,19 @@
 - 设置分类 id：`dsh-ui-font`；槽位 `settings.dshUiFont.item`；localStorage 前缀 `dsh-ui-font:`
 - 行组件 props 用**展开式**（`setSans/setCode/...` 直接作 props），不要用 `actions.xxx` 对象
 
-## 安装（到 A 体系）
+## 安装
+
+### 官方快捷安装（推荐）
+
+使用 DSH 自带插件命令，从 GitHub 直接安装：
+
+```powershell
+dsh plugin add github:gaozhiwei521/dsh-ui-font
+```
+
+然后编辑 profile 的 `package.json`（`%USERPROFILE%\.dsh\profiles\web\package.json`），在 `dsh.profile.bundles` 追加 `"dsh-ui-font"`，重启 DSH（关窗口重开）→ 设置出现"字体"。
+
+### 本地开发安装
 
 ```powershell
 cd $env:USERPROFILE\.dsh\profiles\web
@@ -36,6 +48,15 @@ pnpm add "file:E:\deepseekwork1\dsh-ui-font"
 # 然后编辑 package.json 的 dsh.profile.bundles 追加 "dsh-ui-font"
 # 重启 DSH（关窗口重开）→ 设置出现"字体"
 ```
+
+> 提示：Git 托管的插件若含构建脚本，pnpm 默认阻止 `prepare`——需要在 profile 的 `pnpm-workspace.yaml` 的 `allowBuilds` 里放行对应包（本插件无构建脚本，无需处理）。
+
+## 社区
+
+- 官方仓库：[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)（Everything is a Plugin，可 Star / Issues / Discussions / PR）
+- 插件聚合：[Oh-My-DSH](https://github.com/like-study1/Oh-My-DSH)（DSH 插件目录，可投稿）
+- 插件市场与最佳实践：[dshfind](https://github.com/hikariming/dshfind)
+- 资源列表：[awesome-deepseek-harness](https://github.com/fendouai/awesome-deepseek-harness) / [awesome-dsh-plugin](https://github.com/beancookie/awesome-dsh-plugin)
 
 ## 开发与同步
 
