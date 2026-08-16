@@ -39,7 +39,7 @@
 使用 DSH 自带插件命令，从 GitHub 直接安装：
 
 ```powershell
-dsh plugin add github:gaozhiwei521/dsh-ui-font
+dsh plugin add github:linshufan21/dsh-ui-font
 ```
 
 然后编辑 profile 的 `package.json`（`%USERPROFILE%\.dsh\profiles\web\package.json`），在 `dsh.profile.bundles` 追加 `"dsh-ui-font"`，重启 DSH（关窗口重开）→ 设置出现"字体"。
